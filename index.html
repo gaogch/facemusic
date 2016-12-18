@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src = "js/zepto.min.js"></script>
+    <script src = "js/swiper.jquery.js"></script>
+    <script src = "js/swiper.animate1.0.2.min.js"></script>
+    <script src = "js/guide.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="bg11">
+                    <span>更多音乐</span>
+                    <span>更多感知</span>
+                </div>
+                <div class="bg12 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"></div>
+                <div class="bg15 ani" swiper-animate-effect="flipInY" swiper-animate-duration="1s" swiper-animate-delay="0s"></div>
+                <div class="bg13 ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+                <div class="bg14 ani" swiper-animate-effect="anibg16" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+                    <p class="txt1">sound face</p>
+                    <p class="txt2">音乐至上</p>
+                    <p class="txt3">开启音乐之旅</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg21 ani"    swiper-animate-effect="rotateIn" swiper-animate-duration="1.6s" swiper-animate-delay="0.4s">
+                    <p>新增推荐歌单</p>
+                </div>
+                <div class="back2 ani"     swiper-animate-effect="rollIn" swiper-animate-duration="0.6s" swiper-animate-delay="1s"></div>
+                <p class = "txt21"> 炫酷歌单 <br> 音乐流行</p>
+                <p class="txt22">音乐多元化</p>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="bg31 ani"   swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1.4s"> <p>用音乐感知世界</p></div>
+                <div class="bg32 ani" swiper-animate-effect="flash" swiper-animate-duration="1.4s" swiper-animate-delay="0.2s"></div>
+                <div class="start ani"  swiper-animate-effect="bounceInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.4s">
+                    <a href="home.html">开启体验</a></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination:'.swiper-pagination',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    })
+</script>
+</html>

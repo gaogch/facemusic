@@ -1,0 +1,288 @@
+*{
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-text-size-adjust:100%;
+    -webkit-user-select:none;
+}
+body,html{
+    width:100%;
+    height:100%;
+    background:#1B1B1B;
+    color:#fff;
+}
+body{
+    font-family:Helvetica;
+    overflow:hidden;
+}
+button,input{
+    -webkit-appearance:none;
+}
+p{
+    max-height:9999999px;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+body,p,ul,li,input,form,p{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+header{
+    width:100%;
+    height:0.9rem;
+    background:#101010;
+    color:#fff;
+    padding:0 0.38rem;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    font-size:0.46rem;
+    line-height:0.9rem;
+
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    display:-webkit-box;
+    -webkit-box-direction:normal;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:justify;
+}
+header .logo{
+    width:1.14rem;
+    height:100%;
+    text-align:center;
+    font-size:0.12rem;
+    line-height:1.4rem;
+    /*background:url(../img/)*/
+}
+header .menubtn{
+    width:0.55rem;
+    height:0.55rem;
+    color:#CBAD4B;
+    margin-top:0.2rem;
+}
+header .service{
+    width:0.55rem;
+    height:0.55rem;
+    color:#CBAD4B;
+    margin-top:0.2rem;
+}
+
+.containbox{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0.9rem;
+    font-size:0.22rem;
+}
+.containbox:before,.containbox:after{
+    content:"";
+    display:block;
+}
+.containbox:after{
+    clear:both;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.wrapper:before,.wrapper:after{
+    content:"";
+    display:block;
+}
+.wrapper:after{
+    clear:both;
+}
+.scroller{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.bfmusic{
+    width:100%;
+    height:0.98rem;
+    background:#000;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+}
+.bfmusic .processd{
+    width:6.1rem;
+    height:0.02rem;
+    background:#fff;
+    position:absolute;
+    left:1.34rem;
+    top:-0.08rem;
+}
+.bfmusic .processd .proce{
+    width:0.5rem;
+    height:100%;
+    background:#CBAD4B;
+    position:relative;
+}
+.bfmusic .processd .proce .procecircle{
+    width:0.06rem;
+    height:0.06rem;
+    border-radius:50%;
+    background:#CBAD4B;
+    position:absolute;
+    top:-0.02rem;
+    right:0;
+}
+.bftx{
+    width:1.12rem;
+    height:1.12rem;
+    background:#f0ad4e;
+    border-radius:50%;
+    position:absolute;
+    left:0.22rem;
+    top:-0.4rem;
+    font-size:0.18rem;
+}
+.bfmusic .bfwords{
+    width:80%;
+    height:100%;
+    padding-left:1.4rem;
+    position:relative;
+}
+.bfmusic .bfwords span{
+    color:#fff;
+    font-size:0.2rem;
+    font-weight:bold;
+    padding:0.1rem 0;
+    position:absolute;
+    /*top:0;*/
+}
+.bfmusic .bfwords p{
+    width:100%;
+    font-size:0.18rem;
+    color:#A5A4A0;
+    margin-top:0.2rem;
+    position:absolute;
+    /*left:0;*/
+    top:0.28rem;
+}
+.bfmusic .btn{
+    width:40%;
+    height:100%;
+    background:#111;
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+.menubox{
+    width:4.8rem;
+    height:100%;
+    background:#000;
+    position:absolute;
+    top:-0.9rem;
+    z-index:2;
+    margin-left:-4.8rem;
+}
+
+.menubox .usertx{
+    width:1.95rem;
+    height:1.95rem;
+    border-radius:50%;
+    background:#fff;
+    position:absolute;
+    right:0;left:0;margin:0 auto;
+    top:1.34rem;
+}
+.menubox .usertx .userdj{
+    width:0.38rem;
+    height:0.5rem;
+    color:#CEAA2F;
+    position:absolute;
+    right:0.12rem;
+    bottom:0.12rem;
+    background:#CBAD4B;
+}
+.menubox .usertx span{
+    width:100%;
+    text-align:center;
+    line-height:0.6rem;
+    font-size:0.28rem;
+    color:#fff;
+    position:absolute;
+    bottom:-0.6rem;
+}
+
+.menubox .menuboxlist{
+    width:100%;
+    border-bottom:0.02rem solid #262626;
+    position:absolute;
+    top:5.2rem;
+}
+
+.menubox .menuboxlist ul li{
+    width:100%;
+    height:1.1rem;
+    border-top:0.02rem solid #262626;
+    color:#fff;
+    line-height:1.1rem;
+    font-size:0.28rem;
+    padding:0 0.2rem;
+}
+.menubox .menuboxlist ul li span{
+    margin-left:0.1rem;
+}
+.menubox .menuboxlist ul li .tubiao{
+    width:0.5rem;
+    height:0.5rem;
+    color:#CAAA43;
+    background:orange;
+    float:left;
+    /*position:absolute;*/
+    margin-top:0.3rem;
+    margin-left:0.32rem;
+    margin-right:0.1rem;
+}
+.menubox .menuboxlist ul li .menuboxmore{
+    width:0.5rem;
+    height:0.5rem;
+    color:#CAAA43;
+    background:orange;
+    float:right;
+    margin-top:0.3rem;
+}
+.menubox .menuboxbot{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    padding:0 0.2rem;
+    height:0.98rem;
+    padding-right:0.6rem;
+}
+.menubox .menuboxbot .shez{
+    width:0.5rem;
+    height:0.5rem;
+    color:#CAAA43;
+    margin-left:0.32rem;
+    background:orange;
+    float:left;
+}
+.menubox .menuboxbot .unlogin{
+    width:1.48rem;
+    height:0.54rem;
+    border:0.02rem solid #CAAA43;
+    border-radius:0.1rem;float:right;
+    text-align:center;
+    line-height:0.54rem;
+}
+.menubox .menuboxbot .unlogin a{
+    color:#fff;
+    font-size:0.28rem;
+}
